@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth ;
+}
+::-webkit-scrollbar{
+    background-color: black;
+    width: 9px;
+}
+::-webkit-scrollbar:hover{
+    background-color: aliceblue;
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: green;
+    border-radius: 20px;
+    box-shadow: gray 0px 0px 5px 1.5px;
+}
+body{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(background.jpg) ;
+    background-size: 1590px;
+}
+.navbar{
+    z-index: 1;
+    box-shadow: gray 0px 3px 10px 0px;
+    align-items: center;
+    background-color: black;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: fixed;
+}
+.navbar img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.navbar .logo{
+    display: flex;
+    align-items: center;
+}
+.navbar h3{
+    font-size: 25px;
+    color: green;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin: 15px;
+}
+.navbar ul li a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: green;
+    text-decoration: none;
+}
+
+
+.banner{
+    font-family: Tahoma;
+    color: black;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.banner .kiri {
+    font-size: 20px;
+    margin-right: 50px;
+    margin-left: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.banner .kiri p{
+    font-size: 15px;
+    color: white;
+}
+.banner .kiri .button{
+    display: inline-block;
+    padding: 7px;
+    color: green;
+    background-color: transparent;
+    border: 2px solid green;
+    border-radius: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 5px;
+    margin-top: 25px;
+    font-weight: 500;
+    transition-property: background-color, color;
+}
+.banner .kiri .button:hover{
+    color: white;
+    background-color: green;
+}
+.banner .kiri button:hover{
+    background-color: red;
+}
+.content{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.content img{
+    width: 160px;
+    box-shadow: black 0px 0px 5px 5px;
+}
+.content .kiri{
+    margin-left: 50px;
+    width: 300px;
+    margin-top: 200px;
+
+}
+.content .kanan {
+    color: rgb(5, 85, 5);
+    margin-left: 10px;
+    font-family: tahoma;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 180px;
+    /* margin-right: 250px; */
+
+}
+.content .kanan h3{
+    color: black;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 40px;
+    animation: animasi 5s linear infinite;
+}
+.hub{
+    box-shadow: gray 0px 0px 7px 3px;
+    justify-content: center;
+    height: 20vh;
+    background-color: black;
+    display: block;
+    text-align: center;
+}
+.hub h1{
+    padding-top: 5px;
+    text-transform: uppercase;
+    color: green;
+    font-weight: 700;
+}
+.hub p{
+    text-transform: capitalize;
+    padding-top: 10px;
+    color: white;
+    font-weight: 300;
+}
+.kontak{
+    box-shadow: black 0px 0px 8px 5px;
+    width: 100%;
+    height: 60vh;
+    background-image: url(image.png);
+    background-size: 2300px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+.kontak .box{
+    box-shadow: black 5px 5px 11px 1px;
+        display: flex;
+        font-size: 25px;
+        font-weight: 700;
+        width: 250px;
+        height: 200px;
+        background-image: url(gambar2.jpg);
+        opacity: 50%;
+        background-size: 570px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+}
+.kontak .box:hover{
+    background-image: url(gambar2.jpg);
+    opacity: 100%;
+}
+.footer{
+    box-shadow: white 0px 0px 20px 1px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+@media screen and (max-width:600px){
+    body{
+        background-color: white;
+        background-size: 950px;
+    }
+    .navbar{
+        margin-left: 10px;        
+    }
+    .banner{
+        margin: 0;
+        width: 30px;
+        height: 69vh;
+        margin-right: 800px;
+    }
+    .banner .kiri{
+        width: 30px;
+        font-size: 10px;
+    }
+    .content{
+        background-color: black;
+    }
+    .content .kanan{
+        color: white;
+        width: 990px;
+        font-size: 13px;
+    }
+    .content .kanan h3{
+color: green;
+        letter-spacing: 2px;
+        font-size: 25px;
+    }
+    .content img{
+        width: 100px;
+        margin-top: 100px;
+        margin-left: 10px;
+        border-radius: 20px;
+    }
+    .content .kiri{
+        margin-left: 10px;
+    }
+    .content .kanan{
+        margin-left: 20px;
+    }
+    .kontak{
+        width: 100%;
+        height: 400px;
+        background-color: white;
+        flex-direction: column;
+    }
+    .kontak .box{
+        width: 150px;
+        height: 80px;
+        flex-direction: column-reverse;
+        background-color: green;
+        color: aliceblue;
+        text-decoration: none;
+    }
+    .kontak .box:hover{
+        background-color: green;
+        color: white;
+    }
+    ::-webkit-scrollbar{
+        background-color: black;
+        width: 7px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: green;
+        border-radius: 20px;
+        box-shadow: gray 0px 0px 3px 1.5px;
+    }
+    ::-webkit-scrollbar-thumb:active{
+        background-color: red;
+    }
+}
+@keyframes animasi{
+    0%,100%{
+        transform: translateX(40px);
+    }
+    50%{
+        transform: translateX(-40px);
+    }
+}
